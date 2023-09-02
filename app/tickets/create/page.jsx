@@ -1,4 +1,4 @@
-import CreateForm from "./createForm";
+import CreateForm from "./CreateForm";
 
 export default function CreateTicket() {
   return (
