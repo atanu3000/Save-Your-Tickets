@@ -1,5 +1,5 @@
 import Link from "next/link";
-// import data from "../../../data/db.json";
+import data from "../../../data/db.json";
 
 export async function genarateStaticParams() {
     const res = await fetch("http://localhost:4000/tickets");
@@ -26,8 +26,8 @@ const getTicket = async (id) => {
 
 export default async function TicketDetails({ params }) {
     const id = params.id;
-    // const ticket = data.tickets.find((ticket) => ticket.id === id);
-    const ticket = await getTicket(id);
+    const ticket = data.tickets.find((ticket) => ticket.id === id);
+    // const ticket = await getTicket(id);
     return (
         <main>
             <h2>Ticket Details</h2>
