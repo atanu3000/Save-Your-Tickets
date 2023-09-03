@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "./dojo-logo.png";
-// import LogoutButton from './LogoutButton'
 
 export default function Navbar({ user }) {
     const linkStyle = {
@@ -27,8 +26,7 @@ export default function Navbar({ user }) {
             <Link style={linkStyle} href="/tickets" className="mr-auto">
                 Tickets
             </Link>
-            {user && <span>Hello, User</span>}
-            {/* <LogoutButton /> */}
+            {user && <span>Hello, User</span>}      
         </nav>
     );
 }

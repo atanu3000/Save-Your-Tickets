@@ -1,4 +1,4 @@
-// import data from "../../data/db.json";
+import data from "../../data/db.json";
 import Link from "next/link";
 import TicketCard from "../Components/TicketCard";
 
@@ -38,8 +38,8 @@ export default async function page() {
         width: "100%",
         alignItems: "center",
     };
-    // const tickets = data.tickets;
-    const tickets = await getTickets();
+    const tickets = data.tickets;
+    // const tickets = await getTickets();
     return (
         <main>
             <div style={headStyle}>
